@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    @apply bg-surface font-sans text-ink antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight text-navy;
+  }
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+  :focus-visible {
+    outline: 2px solid #0b192c;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px rgba(245, 158, 11, 0.45);
+    border-radius: 0.5rem;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1280px] px-4 md:px-6 lg:px-8;
+  }
+  .section-eyebrow {
+    @apply text-xs font-bold text-amber-600;
+  }
+  .field {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-base text-ink placeholder:text-slate-400 transition;
+  }
+  .field:focus {
+    @apply border-navy outline-none shadow-glow;
+  }
+  .field[aria-invalid="true"] {
+    @apply border-red-500;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Imagen de ejemplo">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EAEDFF"/><stop offset="1" stop-color="#D6E3FE"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <g fill="none" stroke="#1E3E62" stroke-width="10" stroke-linecap="round">
+    <path d="M120 640 H420 V420 H760 V640 H1080"/><path d="M420 420 V250 H760"/>
+  </g>
+  <g fill="#F59E0B"><circle cx="420" cy="420" r="26"/><circle cx="760" cy="420" r="26"/><circle cx="760" cy="250" r="26"/></g>
+  <text x="600" y="800" text-anchor="middle" font-family="sans-serif" font-size="30" fill="#3a475c">Imagen de ejemplo · sustituir por foto real</text>
+</svg>
